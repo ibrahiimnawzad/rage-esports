@@ -1,0 +1,269 @@
+.works-container {
+    padding: 50px 250px; 
+    min-height: 90vh;
+}
+
+.works-subtitle {
+    color: #888888; 
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.works-title {
+    color: white;
+    font-weight: 400;
+    font-size: 70px;
+    font-family: 'Saira Stencil One', sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 10px #aeaeae;
+}
+
+.works-description-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.works-description {
+  margin-top: 0.75rem; /* mt-3 */
+  color: #888888; /* text-secondary (you can replace with your custom class) */
+  font-size: 1.0625rem; /* text-[17px] */
+  max-width: 48rem; /* max-w-3xl */
+  line-height: 1.875rem; /* leading-[30px] */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch; /* important */
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* existing styles */
+  background-color: #161b22;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 360px;
+  height: 100%;
+}
+
+
+.project-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card-img-hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.75rem;
+}
+
+.card-icon {
+  background: black; /* black-gradient */
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-icon img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  z-index: 5;
+}
+
+.project-title {
+  margin-top: 1.25rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.project-description {
+  margin-top: 0.5rem;
+  color: #a1a1aa;
+  font-size: 0.875rem;
+  flex-grow: 1;
+}
+
+.project-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tag {
+  font-size: 0.875rem;
+}
+
+.tag-react {
+  color: #3b82f6; /* text-blue-500 */
+}
+
+.tag-css {
+  color: #22c55e; /* text-green-500 */
+}
+.tag-mui {
+  color: #d70000; /* text-green-500 */
+}
+.navigation-btn {
+  background-color: #161b22;
+  color: white;
+  border: none;
+  padding: 16px 20px; /* remove excess padding */
+  width: 30px; /* optional: give it a fixed width */
+  height: 20px; /* your requested height */
+  font-size: 18px; /* smaller font size for smaller height */
+  cursor: pointer;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-btn:hover:not(:disabled) {
+  background-color: #3a3a3a;
+}
+
+.navigation-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.projects-slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This centers arrows vertically */
+  margin-top: 5rem;
+  gap: 50px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  justify-content: center;
+}
+
+/* Responsive padding for container */
+.works-container {
+  padding: 50px 1rem;
+}
+
+@media (min-width: 640px) {
+  .works-container {
+    padding: 50px 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .works-container {
+    padding: 50px 100px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .works-container {
+    padding: 50px 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .works-container {
+    padding: 50px 200px;
+  }
+}
+
+/* Responsive title sizing */
+.works-title {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .works-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .works-title {
+    font-size: 4.375rem;
+  }
+}
+
+/* Responsive grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1250px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Fix large icon image in card */
+.card-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hide nav buttons on small screens */
+@media (max-width: 767px) {
+  .navigation-btn {
+    display: none;
+  }
+}
+#projects {
+  scroll-margin-top: 40px;
+}
+
+.tags-and-live-btn-container{
+  display: flex;
+  justify-content: space-between;
+}
+.hover-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hover-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ababab;
+}

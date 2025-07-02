@@ -1,0 +1,154 @@
+.contact-section {
+  margin: 80px 0;
+  position: relative;
+  width: 100%;
+  padding: 8px 100px;
+  height: 80vh;
+}
+.terminal {
+  height: 100%;
+  width: 90%; /* was 100%, now 10% narrower */
+  margin: 0 auto; /* center it horizontally */
+  border-radius: 20px;
+  align-items: center;
+}
+
+.upper{
+  background: linear-gradient(to right, #f2f2f21b, #f2f2f278, #f2f2f21b);
+  width: 100%;
+  height: 70px;
+  border-radius: 20px 20px 0 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-items{
+  display: flex;
+  margin-left: 20px;
+}
+.menu-item{
+  background: rgb(59, 0, 222);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-left: 15px;
+}
+.red{
+  background: #ff5f56cc; 
+  box-shadow: 3px 0 10px #ff5f5699; 
+}
+.yellow{
+  background: #ffbd2ecc;
+  box-shadow: 3px 0 10px #ffbd2e99;}
+.green{
+  background: #4fd664cc;
+  box-shadow: 3px 0 10px #27c93f99;}
+
+.plus-sign{
+  margin-right: 50px;
+  }
+
+
+.lower {
+  width: 100%;
+  background: #16223847;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lower-inner {
+  width: 100%;
+  max-width: 600px; /* controls content width */
+}
+
+
+.head-text {
+  font-size: 54px;
+  font-weight: 600;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 5px rgb(208, 208, 208);
+  letter-spacing: 4px;
+  margin-left: -50px;
+}
+
+.contact-subtext {
+  font-size: 16px;
+  color: #a1a1aa;
+  margin-top: 10px;
+  margin-left: -50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field-label {
+  font-size: 18px;
+  color: #a1a1aa;
+}
+
+.input-border-wrapper {
+  background: linear-gradient(to right, #17243F, #3D5EA5);
+  padding: 2px; /* Border thickness */
+  border-radius: 10px;
+  display: inline-block;
+}
+.textarea-border-wrapper{
+    background: linear-gradient(to right, #17243F, #3D5EA5);
+  padding: 1px; /* Border thickness */
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.field-input {
+  background-color: #0F1728;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}
+
+.field-input::placeholder {
+  color: #d4d4d4;
+}
+
+.field-btn {
+  background-color: #424853;
+  padding: 12px 20px;
+  min-height: 48px;
+  border-radius: 0 50px 0 50px;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: none;
+}
+
+.field-btn_arrow {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+  filter: invert(100%) brightness(0%);
+}
+#contact {
+  scroll-margin-top: 140px;
+}
