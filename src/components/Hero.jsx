@@ -6,11 +6,9 @@ import HeroImageExp from '../assets/hero-img-exp.png';
 const Hero = () => {
   return (
     <section className="hero-section">
-      {/* Background Image */}
       <img className="hero-image-background" src={HeroImageExp} alt="Background Hero" />
       
-      {/* Foreground Image */}
-      <img className="hero-image-foreground" src={HeroImage} alt="Hero" />
+      <img className="hero-image" src={HeroImage} alt="Hero" />
     </section>
   );
 };
