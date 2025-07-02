@@ -14,9 +14,8 @@
   z-index: 50;
 }
 .navbar-logo {
-  color: #070B13;
-  letter-spacing: 0.05em;
-  text-decoration: none;
+  width: 100px;
+  margin-top: 10px;
 }
 .navbar-links {
   display: none;

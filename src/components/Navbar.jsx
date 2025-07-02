@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import RageLogo from '../assets/rage-logo.png';
+
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [isOpen, setIsOpen] = useState(false);
 
-  const sections = ['about', 'projects', 'contact'];
+  const sections = ['about', 'news', 'esports', 'contact'];
 
 const handleClick = (section) => {
   setActive(section);
@@ -46,11 +48,10 @@ const handleClick = (section) => {
     <>
       <nav className="navbar-container">
         <a
-          className="navbar-logo"
           href="#"
           onClick={() => setActive('')}
         >
-          IBRAHIIM
+          <img className='navbar-logo' src={RageLogo} alt="" />
         </a>
 
         <div className="navbar-links hidden lg:flex">
