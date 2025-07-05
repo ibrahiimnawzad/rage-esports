@@ -40,7 +40,7 @@
   left: 0;
   height: 0%;
   width: 100%;
-  background: #E6D87A;
+  background: #742020;
   z-index: -1;
   transition: height 0.3s ease;
   border-radius: 8px;
@@ -51,11 +51,11 @@
 }
 
 .navbar-link:hover {
-  color: #070B13;
+  color: #ffffff;
 }
 
 .navbar-link.active-link {
-  border-bottom: 5px solid #E6D87A;
+  border-bottom: 5px solid #742020;
 }
 
 .navbar-separator {
