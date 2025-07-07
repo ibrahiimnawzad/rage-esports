@@ -11,6 +11,8 @@
   margin: 0 auto; /* center it horizontally */
   border-radius: 20px;
   align-items: center;
+    background: #3A0009;
+
 }
 
 .upper{
