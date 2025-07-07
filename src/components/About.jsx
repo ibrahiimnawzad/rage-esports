@@ -15,7 +15,7 @@ const About = () => {
           </p>
           <p className='sub-header'> <span className='highlighted'>In Rage, We Play To Win. And Win To Inspire.</span></p>
         </div>
-
+        
         <div className="ribbon">
           <div className="ribbon-track">
             <div className="ribbon-content">

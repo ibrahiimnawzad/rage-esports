@@ -5,6 +5,7 @@
   position: relative;
   padding: 150px 100px;
   height: 100vh;
+  padding-bottom: 160px;
   }
 .about-container{
   display: flex;
@@ -42,7 +43,7 @@
   margin-top: 20px;
 }
 .highlighted{
-  background: linear-gradient(to top, #790606 50%, transparent 50%);
+  background: linear-gradient(to top, #ad0101 50%, transparent 50%);
   border-radius: 15px;
 }
 
@@ -66,15 +67,18 @@
 }
 
 .ribbon {
+  position: absolute;
+  top: 85%;
+  left: 0;
   background: white;
   width: 100%;
   height: 80px;
   overflow: hidden;
   border-radius: 10px;
-  margin-top: -100px;
   display: flex;
   align-items: center;
 }
+
 .ribbon-track {
   width: 100%;
   overflow: hidden;
@@ -96,7 +100,7 @@
 }
 
 /* Laptop screens (max-width: 1280px) */
-@media (max-width: 1600px) {
+@media (max-width: 1400px) {
   .about-section {
     padding: 100px 60px;
   }
@@ -117,7 +121,6 @@
   .watermark {
     width: 600px;
     height: 600px;
-    background: green;
   }
 
   .ribbon-logo {
@@ -127,98 +130,19 @@
 
   .ribbon p {
     font-size: 22px;
-  }
-}
-
-/* Tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .about-section {
-    padding: 80px 40px;
-    height: auto;
-  }
-
-  .text-container {
-    position: static;
-    max-width: 100%;
-    margin-top: 40px;
-  }
-
-  .text-header {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .paragraph {
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
-  }
-
-  .sub-header {
-    text-align: center;
-    margin-left: 0;
-  }
-
-  .watermark {
-    width: 400px;
-    height: 400px;
-    background: blue;
-  }
-
-  .ribbon {
-    height: 60px;
-  }
-
-  .ribbon-logo {
-    width: 50px;
-    height: 50px;
-  }
-
-  .ribbon p {
-    font-size: 20px;
-  }
-}
-
-/* Mobile devices (max-width: 640px) */
-@media (max-width: 640px) {
-  .about-section {
-    padding: 60px 20px;
-  }
-
-  .text-header {
-    font-size: 32px;
-  }
-
-  .paragraph {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  .sub-header {
-    font-size: 18px;
-    margin-top: 15px;
-  }
-
-  .watermark {
-    width: 300px;
-    height: 300px;
-    background: yellow;
-  }
-
-  .ribbon {
-    height: 50px;
-  }
-
-  .ribbon-logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  .ribbon p {
-    font-size: 16px;
-  }
-
-  .ribbon-content {
-    gap: 60px;
-  }
-}
+  }}
+  @media (max-width: 700px){
+    .watermark{
+      object-fit: contain;
+      position: absolute;
+      bottom: 20%;
+    }
+    .sub-header{
+      margin-right: 100px;
+    }
+    .ribbon{
+      position: absolute;
+      top: 90%;
+      left: 5%;
+    }
+  } 
