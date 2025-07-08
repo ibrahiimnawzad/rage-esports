@@ -139,14 +139,24 @@
       bottom: 20%;
     }
     .text-header{
-      font-size: 36px;
+      font-size: 46px;
+      letter-spacing: 5px;
+      
     }
     .sub-header{
       margin-right: 100px;
+    }
+    .paragraph{
+      font-size: 20px;
     }
     .ribbon{
       position: absolute;
       top: 90%;
       left: 0;
+    }
+    .text-container{
+      margin: 0 0 0 -50px ;
+      max-width: 100%;
+      padding: 0  15px;
     }
   } 
