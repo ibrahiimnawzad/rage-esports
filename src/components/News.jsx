@@ -1,5 +1,5 @@
 import React from "react";
-import './Works.css';
+import './News.css';
 
 import Watermark from '../assets/logo-bg.png'; 
 
@@ -8,9 +8,9 @@ import TopRightImage from '../assets/image 11.png';     // replace with actual i
 import BottomRightImage from '../assets/image 12.png';     // replace with actual image
 import MainImage from '../assets/image 13.png';      // replace with actual image
 
-const Works = () => {
+const News = () => {
   return (
-    <section className="news-container" id="projects">
+    <section className="news-container" id="news">
       <div className="news-content">
         <h2 className="news-header">Rage Esports News</h2>
         <div className="news-grid">
@@ -57,4 +57,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default News;

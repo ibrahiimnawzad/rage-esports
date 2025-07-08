@@ -3,8 +3,8 @@ import Hero from "./components/Hero";
 
 import "tailwindcss";
 import About from "./components/About";
-import Works from "./components/Works.jsx";
 import Contact from "./components/Contact.jsx";
+import News from "./components/News.jsx";
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Works />
+      <News />
       <Contact />
     </>
   )

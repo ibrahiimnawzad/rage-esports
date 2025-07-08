@@ -15,6 +15,7 @@
   align-self: center;
   width: 800px;
   height: 800px;
+  z-index: -1;
 }
 .text-container{
   position: absolute;
@@ -137,12 +138,15 @@
       position: absolute;
       bottom: 20%;
     }
+    .text-header{
+      font-size: 36px;
+    }
     .sub-header{
       margin-right: 100px;
     }
     .ribbon{
       position: absolute;
       top: 90%;
-      left: 5%;
+      left: 0;
     }
   } 
