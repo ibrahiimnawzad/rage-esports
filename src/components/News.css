@@ -127,27 +127,27 @@ hr{
 
 @media (min-width: 1280px) and (max-width: 1599px) {
   .news-content {
-    padding: 50px;
+    padding: 30px 205x;
     max-width: 1280px;
   }
 
   .main-image {
-    height: 450px;
+    height: 420px;
   }
 
   .top-left-image,
   .top-right-image,
   .bottom-right-image {
-    width: 320px;
-    height: 210px;
+    width: 300px;
+    height: 180px;
   }
 
   .news-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .news-text {
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.4;
   }
 }
