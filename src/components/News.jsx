@@ -34,7 +34,7 @@ const News = () => {
             <img src={MainImage} alt="main" className="main-image" />
             <h3 className="news-title">Lorem ipsum dolor sit amet.</h3>
             <p className="news-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad dignissimos autem, consequuntur mollitia sed earum quod illum tenetur quibusdam.            
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic voluptates dicta inventore enim doloribus, iusto recusandae nobis ducimus amet excepturi consectetur a cum eaque distinctio non corporis facilis porro earum fuga esse! Adipisci reprehenderit quae velit. Neque, consectetur nostrum.
             </p>
           </div>
 
