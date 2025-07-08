@@ -27,6 +27,7 @@ const News = () => {
             <p className="news-text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi explicabo, natus quam voluptatum praesentium ipsa? Iusto exercitationem numquam doloremque! Rem aut consequuntur deserunt sequi iusto.            
             </p>
+            <hr />
           </div>
 
           {/* Center column */}
@@ -36,6 +37,7 @@ const News = () => {
             <p className="news-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic voluptates dicta inventore enim doloribus, iusto recusandae nobis ducimus amet excepturi consectetur a cum eaque distinctio non corporis facilis porro earum fuga esse! Adipisci reprehenderit quae velit. Neque, consectetur nostrum.
             </p>
+            <hr />
           </div>
 
           {/* Right column */}
