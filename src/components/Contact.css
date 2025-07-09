@@ -238,6 +238,9 @@
     margin-top: 0;
     padding: 0 10px;
   }
+  .field-input{
+    width: 500px;
+  }
 }
 
 /* Small screens (phones) */
@@ -267,6 +270,7 @@
   .field-input {
     font-size: 14px;
     padding: 10px 16px;
+    width: 300px;
   }
 
   .field-btn {
