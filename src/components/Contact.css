@@ -179,10 +179,10 @@
 }
 
 .rights-line {
-  width: 80%; /* or a fixed px if preferred */
+  width: 50%; /* or a fixed px if preferred */
   border: none;
   height: 1px;
-  background: #ffffff;
+  background: #ffffff76;
   margin-bottom: 10px;
 }
 
@@ -190,6 +190,37 @@
   color: white;
   font-size: 16px;
   text-align: center;
+}
+@media (max-width: 1500px){
+  .contact-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.head-text {
+  color: #ffffff;
+  text-shadow: 1px 1px 5px #ffffff;
+  letter-spacing: 4px;
+}
+.large-text{
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.small-text{
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.contact-subtext{
+  font-size: 16px;
+}
+.rights-container{
+  margin: 100px;
+}
+
 }
 /* Medium screens (laptops & tablets under 1024px) */
 @media (max-width: 1024px) {
@@ -241,12 +272,15 @@
   .field-input{
     width: 500px;
   }
+  .rights-container {
+    margin-bottom: -50px;
+  }
 }
 
 /* Small screens (phones) */
 @media (max-width: 640px) {
   .contact-section {
-    padding: 20px;
+    padding: 0;
     background-size: 80%; /* Smaller watermark */
   }
 
@@ -290,7 +324,7 @@
   }
 
   .rights-container {
-    margin-top: 80px;
+    margin-bottom: -50px;
   }
 
   .rights-text {

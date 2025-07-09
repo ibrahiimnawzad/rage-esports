@@ -125,7 +125,7 @@ const Contact = () => {
                       required
                       rows={5}
                       className="field-input"
-                      placeholder="Share your thoughts or inquiries..."
+                      placeholder="Write your message here.."
                     />
                   </div>
                 </label>
@@ -141,7 +141,6 @@ const Contact = () => {
               <hr className="rights-line" />
               <p className="rights-text">© 2025 Rage Esports — Built by gamers, for gamers. 🕹️</p>
             </div>
-
 </section>
 
   );
