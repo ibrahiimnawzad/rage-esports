@@ -1,8 +1,6 @@
 import React from "react";
 import './News.css';
 
-import Watermark from '../assets/logo-bg.png'; 
-
 import TopLeftImage from '../assets/image 10.png'; // replace with actual image
 import TopRightImage from '../assets/image 11.png';     // replace with actual image
 import BottomRightImage from '../assets/image 12.png';     // replace with actual image

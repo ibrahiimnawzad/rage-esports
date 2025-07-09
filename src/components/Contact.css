@@ -4,89 +4,100 @@
   width: 100%;
   padding: 8px 100px;
   height: 80vh;
-}
-.terminal {
-  height: 100%;
-  width: 90%; /* was 100%, now 10% narrower */
-  margin: 0 auto; /* center it horizontally */
-  border-radius: 20px;
-  align-items: center;
-    background: #3A0009;
 
+  background-image: url('../assets/logo-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%; /* Adjust size as needed */
+  opacity: 1; /* full section opacity */
 }
 
-.upper{
-  background: linear-gradient(to right, #f2f2f21b, #f2f2f278, #f2f2f21b);
-  width: 100%;
-  height: 70px;
-  border-radius: 20px 20px 0 0 ;
+.contact-wrapper{
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-.menu-items{
-  display: flex;
-  margin-left: 20px;
-}
-.menu-item{
-  background: rgb(59, 0, 222);
-  border-radius: 50%;
-  height: 15px;
-  width: 15px;
-  margin-left: 15px;
-}
-.red{
-  background: #ff5f56cc; 
-  box-shadow: 3px 0 10px #ff5f5699; 
-}
-.yellow{
-  background: #ffbd2ecc;
-  box-shadow: 3px 0 10px #ffbd2e99;}
-.green{
-  background: #4fd664cc;
-  box-shadow: 3px 0 10px #27c93f99;}
-
-.plus-sign{
-  margin-right: 50px;
-  }
-
-
-.lower {
-  width: 100%;
-  background: #16223847;
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 }
-
-.lower-inner {
-  width: 100%;
-  max-width: 600px; /* controls content width */
+.left-side{
+  margin-left: 30px;
+  max-width: 50%;
 }
-
 
 .head-text {
-  font-size: 54px;
-  font-weight: 600;
-  color: #e0e0e0;
-  text-shadow: 1px 1px 5px rgb(208, 208, 208);
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #ffffff;
   letter-spacing: 4px;
-  margin-left: -50px;
+}
+.large-text{
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.small-text{
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-left: 5px;
 }
 
 .contact-subtext {
-  font-size: 16px;
-  color: #a1a1aa;
+  font-size: 20px;
+  color: #ffffff;
   margin-top: 10px;
-  margin-left: -50px;
+  white-space: normal; /* allow wrapping */
+  word-break: break-word; /* ensure long words break nicely */
+  max-width: 500px; /* optional, for better readability */
 }
 
+.socials-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.socials-logo{
+  width: 50px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+.email{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.phone{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+
+}
+.email-container,
+.phone-container{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.email-and-phone-container p{
+  color: #ffffff;
+}
+
+
+.socials-logo:hover {
+  transform: scale(1.2);
+}
+
+
+.right-side{
+  min-width: 50%;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 28px;
   margin-top: 48px;
+  width: 100%;
 }
 
 .form-label {
@@ -97,40 +108,40 @@
 
 .field-label {
   font-size: 18px;
-  color: #a1a1aa;
+  color: #ffffff;
 }
 
 .input-border-wrapper {
-  background: linear-gradient(to right, #17243F, #3D5EA5);
+  background: linear-gradient(to right, #5a0000, #fa0000);
   padding: 2px; /* Border thickness */
   border-radius: 10px;
   display: inline-block;
 }
 .textarea-border-wrapper{
-    background: linear-gradient(to right, #17243F, #3D5EA5);
+    background: linear-gradient(to right, #5a0000, #fa0000);
   padding: 1px; /* Border thickness */
   border-radius: 10px;
   display: inline-block;
 }
 
 .field-input {
-  background-color: #0F1728;
+  background-color: #ffffff;
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
   font-size: 16px;
-  color: white;
+  color: #505050;
   width: 100%;
   outline: none;
   box-shadow: none;
 }
 
 .field-input::placeholder {
-  color: #d4d4d4;
+  color: #b8b8b8;
 }
 
 .field-btn {
-  background-color: #424853;
+  background-color: #880f0f;
   padding: 12px 20px;
   min-height: 48px;
   border-radius: 0 50px 0 50px;
@@ -140,9 +151,14 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   border: none;
+  transition: box-shadow 0.3s ease;
+
+}
+.field-btn:hover{
+    box-shadow: 0 5px 15px #b52020;
+  
 }
 
 .field-btn_arrow {
@@ -153,4 +169,132 @@
 }
 #contact {
   scroll-margin-top: 140px;
+}
+.rights-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 170px; /* add spacing above */
+}
+
+.rights-line {
+  width: 80%; /* or a fixed px if preferred */
+  border: none;
+  height: 1px;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+.rights-text {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+/* Medium screens (laptops & tablets under 1024px) */
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 40px 40px;
+    height: auto;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 60px;
+  }
+
+  .left-side,
+  .right-side {
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .large-text {
+    font-size: 72px;
+  }
+
+  .small-text {
+    font-size: 32px;
+  }
+
+  .contact-subtext {
+    font-size: 18px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .socials-container {
+    justify-content: center;
+  }
+
+  .email-container,
+  .phone-container {
+    justify-content: center;
+  }
+
+  .contact-form {
+    margin-top: 0;
+    padding: 0 10px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 20px;
+    background-size: 80%; /* Smaller watermark */
+  }
+
+  .large-text {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .small-text {
+    font-size: 24px;
+  }
+
+  .contact-subtext {
+    font-size: 16px;
+  }
+
+  .field-label {
+    font-size: 16px;
+  }
+
+  .field-input {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .field-btn {
+    font-size: 16px;
+    padding: 10px 16px;
+    min-height: 40px;
+  }
+
+  .socials-logo {
+    width: 40px;
+    height: 32px;
+  }
+
+  .email, .phone {
+    width: 24px;
+    height: 24px;
+  }
+
+  .rights-container {
+    margin-top: 80px;
+  }
+
+  .rights-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .rights-line {
+    width: 90%;
+  }
 }
