@@ -1,13 +1,13 @@
 import React from 'react';
 import './About.css';
-import Watermark from '../assets/logo-bg.png';
+// import Watermark from '../assets/logo-bg.png';
 import BlackLogo from '../assets/black-logo.png';
 
 const About = () => {
   return (
     <section className="about-section" id="about">
       <div className="about-container">
-        <img src={Watermark} alt="bg" className='watermark' />
+        {/* <img src={Watermark} alt="bg" className='watermark' /> */}
         <div className="text-container">
           <h2 className='text-header'>Who Are We?</h2>
           <p className='paragraph'>

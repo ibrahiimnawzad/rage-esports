@@ -6,6 +6,13 @@
   padding: 150px 100px;
   height: 100vh;
   padding-bottom: 160px;
+
+
+  background-image: url('../assets/logo-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%; /* Adjust size as needed */
+  opacity: 1; /* full section opacity */
   }
 .about-container{
   display: flex;

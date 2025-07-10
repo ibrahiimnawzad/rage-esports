@@ -1,22 +1,34 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-
-import "tailwindcss";
-import About from "./components/About";
-import Contact from "./components/Contact.jsx";
-import News from "./components/News.jsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import News from './components/News';
+import Contact from './components/Contact';
+import Esports from './components/Esports';
+import TeamPage from './components/TeamPage';
 
 function App() {
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
-      <About />
-      <News />
-      <Contact />
-    </>
-  )
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <News />
+              <Esports />
+              <Contact />
+            </>
+          }
+        />
+        <Route path="/teams" element={<Esports />} />
+        <Route path="/teams/:teamId" element={<TeamPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,168 @@
+/* Section: Esports Overview (3 Game Cards) */
+.esports-overview {
+  padding: 100px 80px;
+  color: white;
+  text-align: center;
+  min-height: auto;
+}
+
+.overview-title {
+  font-size: 64px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Game Cards Grid */
+.game-card-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.game-card {
+  background: #000000;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 500px;
+  height: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.title-wrapper {
+  position: relative;
+  width: 100vw; /* full viewport width */
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: -50px;
+  margin-left: calc(-1 * (100vw - 100%)/2);
+  z-index: -100;
+}
+.title-image{
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+
+.game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.title-overlay h3 {
+  color: #ffffff;
+  font-size: 58px;
+  margin: 0;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px #a22e2e;
+  letter-spacing: 5px;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.game-image:hover{
+  opacity: 0.8;
+
+}
+
+.game-card h3 {
+  font-size: 24px;
+  padding: 20px;
+  color: #E6D87A;
+}
+
+/* Section: Team Page */
+.team-section {
+  padding: 100px 80px;
+  background-color: #0F1728;
+  color: white;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+/* Player Cards */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.player-card {
+  background: #1E2A3A;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.player-image-placeholder {
+  background: #3A0009;
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ccc;
+}
+
+.player-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #E6D87A;
+}
+
+.real-name {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.role {
+  font-size: 14px;
+  color: #66b0ff;
+  margin-top: 8px;
+}
+
+.country {
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Not Found Message */
+.not-found {
+  padding: 100px;
+  text-align: center;
+  font-size: 24px;
+  color: #ff5f56;
+}

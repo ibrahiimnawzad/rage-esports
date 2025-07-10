@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  
 }
 
 .news-content {
@@ -13,6 +14,13 @@
   height: 85vh;
   box-sizing: border-box;
   margin-top: 50px;
+
+
+  background-image: url('../assets/logo-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:60%; /* Adjust size as needed */
+  opacity: 1; /* full section opacity */
 }
 
 .news-header {
