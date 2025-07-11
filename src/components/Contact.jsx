@@ -3,11 +3,11 @@ import { useRef, useState } from 'react';
 
 import arrowUp from '../assets/arrow-up.png';
 
-import instagram from '../assets/image 17.png'
-import facebook from '../assets/image 21.png'
-import tiktok from '../assets/image 23.png'
-import youtube from '../assets/image 24.png'
-import x from '../assets/image 20.png'
+import instagram from '../assets/instagram5.png'
+import facebook from '../assets/facebook.png'
+import tiktok from '../assets/tiktok.png'
+import youtube from '../assets/youtube.png'
+import x from '../assets/x.png'
 import email from '../assets/email.png'
 import phone from '../assets/phone.svg'
 

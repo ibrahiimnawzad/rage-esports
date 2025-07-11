@@ -69,7 +69,6 @@
   font-size: 58px;
   margin: 0;
   font-weight: 600;
-  text-shadow: 2px 2px 5px #a22e2e;
   letter-spacing: 5px;
 }
 
@@ -165,4 +164,72 @@
   text-align: center;
   font-size: 24px;
   color: #ff5f56;
+}
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .esports-overview {
+    padding: 80px 40px;
+  }
+
+  .overview-title {
+    font-size: 48px;
+  }
+
+  .game-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .game-image {
+    height: 220px;
+    width: 500px;
+  }
+
+  .title-overlay h3 {
+    font-size: 40px;
+  }
+}
+
+/* Mobile devices (max-width: 640px) */
+@media (max-width: 640px) {
+  .esports-overview {
+    padding: 60px 20px;
+  }
+
+  .overview-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .game-card {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .game-image {
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+    width: 400px;
+
+  }
+
+.title-overlay h3 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;      
+  overflow: hidden;         
+  text-overflow: ellipsis;   
+}
+
+
+  .title-wrapper {
+    height: 250px;
+  }
+
+  .title-image {
+    height: 250px;
+    object-fit: cover;
+  }
 }
