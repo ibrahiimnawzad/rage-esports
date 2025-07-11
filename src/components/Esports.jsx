@@ -1,5 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Tilt } from 'react-tilt';
+import { motion } from 'framer-motion';
+
 import './Esports.css';
 
 import FC25 from '../assets/fc25.jpg';     
@@ -32,11 +35,18 @@ const Esports = () => {
       </div>
 
       <div className="game-card-grid">
-        {gameCards.map((card, index) => (
-          <div key={index} className="game-card" onClick={() => navigate(card.path)}>
-            <img src={card.image} alt={card.title} className="game-image" />
-          </div>
-        ))}
+{gameCards.map((card, index) => (
+  <Tilt
+    key={index}
+    options={{ max: 25, scale: 1.05, speed: 400 }}
+    className="tilt-wrapper"
+  >
+    <div className="game-card" onClick={() => navigate(card.path)}>
+      <img src={card.image} alt={card.title} className="game-image" />
+    </div>
+  </Tilt>
+))}
+
       </div>
     </section>
   );
