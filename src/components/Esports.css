@@ -95,35 +95,75 @@
   color: #E6D87A;
 }
 
-/* Section: Team Page */
 .team-section {
-  padding: 100px 80px;
-  background-color: #0F1728;
+  padding:  80px 0px ;
   color: white;
   text-align: center;
 }
-
-.team-title {
-  font-size: 42px;
-  margin-bottom: 40px;
+/* COD STYLES */
+.cod-theme .player-card{
+  background: #a06800;
 }
 
-/* Player Cards */
+.cod-theme.team-section {
+  background: linear-gradient(to bottom, #000000, #0e0700);
+}
+
+/* FC STYLES */
+.FC25-theme.team-section{
+  background: linear-gradient(to bottom, #000000, #1a0101);
+}
+.FC25-theme .team-banner{
+  object-fit: cover;
+}
+/* Rainbow Styles */
+.Rainbow-theme .team-banner{
+  object-fit: cover;
+}
+.Rainbow-theme{
+    background: linear-gradient(to bottom, #000000, #1c0525);
+}
+.Rainbow-theme .player-card{
+  background: #2d014aa0;
+}
+
+/* Pubg Styles */
+.pubg-theme{
+  background: linear-gradient(to bottom, #000000, #171003, #171003, #171003);
+}
+.pubg-theme .team-banner{
+  object-fit: fill;
+}
+.pubg-theme .player-card{
+  background: #211704;
+}
+
+.team-banner{
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
 .player-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .player-card {
-  background: #1E2A3A;
+  background: #770000;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
 }
 
 .player-image-placeholder {
-  background: #3A0009;
   width: 100%;
   height: 220px;
   border-radius: 10px;
@@ -133,6 +173,13 @@
   justify-content: center;
   font-size: 24px;
   color: #ccc;
+  margin-top: -50px;
+  transition: scale 0.3s ease;
+  object-fit: fill;
+}
+
+.player-image-placeholder:hover{
+  scale: 1.1;
 }
 
 .player-card h3 {
@@ -189,8 +236,9 @@
     font-size: 40px;
   }
 }
-
-/* Mobile devices (max-width: 640px) */
+.mobile-banner {
+  display: none;
+} 
 @media (max-width: 640px) {
   .esports-overview {
     padding: 60px 20px;
@@ -211,18 +259,16 @@
     height: 180px;
     border-radius: 12px 12px 0 0;
     width: 400px;
-
   }
 
-.title-overlay h3 {
-  font-size: 40px;
-  text-align: center;
-  font-weight: 600;
-  white-space: nowrap;      
-  overflow: hidden;         
-  text-overflow: ellipsis;   
-}
-
+  .title-overlay h3 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;      
+    overflow: hidden;         
+    text-overflow: ellipsis;   
+  }
 
   .title-wrapper {
     height: 250px;
@@ -231,5 +277,28 @@
   .title-image {
     height: 250px;
     object-fit: cover;
+  }
+
+  .team-banner {
+    object-fit: contain;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  .player-card{
+    margin-top: 50px;
+  }
+  .desktop-banner {
+    display: none;
+  }
+  .mobile-banner {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
   }
 }
