@@ -14,8 +14,7 @@ import TitleBg from '../assets/title-bg4.webp';
 
 
 const gameCards = [
-  { title: 'Rainbow Six', image: Rainbow, path: '/teams/rainbow6' },
-  { title: 'COD', image: Cod, path: '/teams/cod' },
+   { title: 'COD', image: Cod, path: '/teams/cod' },
   { title: 'PUBG', image: Pubg, path: '/teams/pubg' },
   { title: 'FC25', image: FC25, path: '/teams/fc25' },
 ];
