@@ -117,13 +117,13 @@
   object-fit: cover;
 }
 /* Rainbow Styles */
-.Rainbow-theme .team-banner{
+.rainbow-theme .team-banner{
   object-fit: cover;
 }
-.Rainbow-theme{
+.rainbow-theme{
     background: linear-gradient(to bottom, #000000, #1c0525);
 }
-.Rainbow-theme .player-card{
+.rainbow-theme .player-card{
   background: #2d014aa0;
 }
 
@@ -135,7 +135,7 @@
   object-fit: fill;
 }
 .pubg-theme .player-card{
-  background: #211704;
+  background: #3d0505;
 }
 
 .team-banner{

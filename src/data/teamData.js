@@ -10,14 +10,25 @@ import cod3 from '../assets/cod3.jpg';
 import cod4 from '../assets/cod4.jpg'; 
 import cod5 from '../assets/cod5.jpg'; 
 
+//PUBG
+import pubg1 from '../assets/pubg 1.png'; 
+import pubg2 from '../assets/pubg 2.png'; 
+import pubg3 from '../assets/pubg 3.png'; 
+import pubg4 from '../assets/pubg 4.png'; 
+import pubg5 from '../assets/pubg 5.png'; 
+
+
 const teamData = {
   pubg: {
     name: 'pubg',
     image: Pubg,
     players: [
-      { name: 'Johan Meyer', nickname: 'Sn1perX', role: 'Scout', country: '🇩🇪' },
-      { name: 'Ali Mahmoud', nickname: 'Smokez', role: 'Support', country: '🇮🇶' },
-      { name: 'Tariq Faisal', nickname: 'Clutcher', role: 'Fragger', country: '🇯🇴' },
+      { name: 'Johan Meyer', nickname: 'Sn1perX', role: 'Scout', country: '🇩🇪', image :pubg1},
+      { name: 'Ali Mahmoud', nickname: 'Smokez', role: 'Support', country: '🇮🇶', image :pubg2 },
+      { name: 'Tariq Faisal', nickname: 'Clutcher', role: 'Fragger', country: '🇯🇴', image :pubg3 },
+      { name: 'Tariq Faisal', nickname: 'Clutcher', role: 'Fragger', country: '🇯🇴', image :pubg4 },
+      { name: 'Tariq Faisal', nickname: 'Clutcher', role: 'Fragger', country: '🇯🇴', image :pubg5 },
+
     ],
   },
     cod: {
@@ -40,18 +51,18 @@ const teamData = {
 
     ],
   },
-  // rainbow6: {
-  //   name: 'Rainbow',
-  //   image: Rainbow,
-  //   players: [
-  //     { name: 'Kyle Wren', nickname: 'SilentFox', role: 'Entry', country: '🇺🇸' },
-  //     { name: 'Victor Leblanc', nickname: 'ReconV', role: 'Intel', country: '🇫🇷' },
-  //     { name: 'Rami Al-Hassan', nickname: 'Breaker', role: 'Breacher', country: '🇸🇾' },
-  //     { name: 'Rami Al-Hassan', nickname: 'Breaker', role: 'Breacher', country: '🇸🇾' },
-  //     { name: 'Rami Al-Hassan', nickname: 'Breaker', role: 'Breacher', country: '🇸🇾' },
+  rainbow: {
+    name: 'rainbow',
+    image: Rainbow,
+    players: [
+      { name: 'Kyle Wren', nickname: 'SilentFox', role: 'Entry', country: '🇺🇸' },
+      { name: 'Victor Leblanc', nickname: 'ReconV', role: 'Intel', country: '🇫🇷' },
+      { name: 'Rami Al-Hassan', nickname: 'Breaker', role: 'Breacher', country: '🇸🇾' },
+      { name: 'Rami Al-Hassan', nickname: 'Breaker', role: 'Breacher', country: '🇸🇾' },
+      { name: 'Rami Al-Hassan', nickname: 'Breaker', role: 'Breacher', country: '🇸🇾' },
 
-  //   ],
-  // },
+    ],
+  },
 };
 
 export default teamData;
